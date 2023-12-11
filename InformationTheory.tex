@@ -241,6 +241,28 @@ $$P(b_j/a_i) = 1- \sum_{j=1,j \neq 1}^{|A|} P(b_j/a_i) $$
 \end{table}
 
 
+\begin{table}[H]
+	\caption{Ймовірності $p(b_j )$}
+	\centering
+	\resizebox{\columnwidth}{!}{%
+		\input{latex_tables/sums.tex}
+	}	
+	\label{table:sums}
+\end{table}
+
+Побудуємо канальну матрицю $P(a_{і} / b_{j} )$ із матриці об'єднання $P(a_{і}, b_{j} )$ шляхом ділення елементів матриці $P(a_{і}, b_{j} )$ на відповідні ймовірності $p(b_j )$.
+
+
+\begin{table}[H]
+	\caption{Канальна матриця $P(a_{і} / b_{j} )$ }
+	\centering
+	\resizebox{\columnwidth}{!}{%
+		\input{latex_tables/channel_matrix_p_ai_bj.tex}
+	}	
+	\label{table:channel_matrix_p_ai_bj}
+\end{table}
+
+
 \subsubsection{Висновок}
 Більш завадостійкими є кодові комбінації, які характеризуються більшими
 значеннями кодових відстаней.
